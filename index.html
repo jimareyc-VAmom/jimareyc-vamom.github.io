@@ -213,13 +213,18 @@ footer{background:var(--nude3);padding:1.75rem 5rem;display:flex;justify-content
   .hero h1{font-size:2.1rem;max-width:100%}
   .hero-ctas{justify-content:center}
   .hero-stats{grid-template-columns:repeat(3,1fr)}
-  .hero-card{display:none}
-  .proof-bar{padding:1.25rem 1.5rem;gap:1.5rem}
-  .proof-divider{display:none}
+  .hero-card{display:block;margin-top:2rem}
+  .hero-card .hc-name,.hero-card .hc-title,.hero-card .hc-niche{display:none}
+  .hero-photo{width:120px;height:120px;border-radius:50%;display:block;margin:0 auto 1rem}
+  .proof-bar{padding:1.25rem 1rem;display:table;width:100%;table-layout:fixed}
+  .proof-item{display:table-cell;text-align:center;vertical-align:middle;border-right:1px solid var(--border);padding:0.5rem 0.25rem}
+  .proof-item:last-child{border-right:none}
+  .proof-num{font-size:1rem}
+  .proof-label{font-size:0.5rem}
   .about,.services,.tools,.experience,.testimonials{padding:4rem 1.5rem}
   .results,.certs{padding:4rem 1.5rem}
   .about-grid{grid-template-columns:1fr}
-  .about-photo{display:none}
+  .about-photo{width:200px;max-width:200px;margin:2rem auto 0;display:block}
   .services-grid{grid-template-columns:1fr}
   .svc{border-right:none;border-bottom:1px solid var(--border)}
   .svc:last-child{border-bottom:none}
@@ -232,6 +237,8 @@ footer{background:var(--nude3);padding:1.75rem 5rem;display:flex;justify-content
   .contact-links-grid{grid-template-columns:1fr}
   .section-heading{font-size:1.9rem}
   footer{padding:1.5rem;flex-direction:column;gap:0.5rem;text-align:center}
+  /* FAQ mobile fix */
+  section[id="faq"] > div{grid-template-columns:1fr !important}
 }
 </style>
 </head>
